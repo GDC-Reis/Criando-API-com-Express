@@ -13,8 +13,6 @@ router.get(
 );
 router.get('/contacts/:id', ContacController.show);
 router.delete('/contacts/:id', ContacController.delete);
-
-
-
+router.post('/contacts/', ContacController.store);
 
 module.exports = router
